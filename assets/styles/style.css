@@ -1,0 +1,12 @@
+body {
+  margin: 5%;
+  font-family:'Courier New', Courier, monospace;
+  background-color: rgb(243, 238, 233);
+}
+ul{
+  padding-left: 0;
+}
+li{
+  list-style-type: none;
+}
+
