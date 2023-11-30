@@ -1,22 +1,21 @@
 body {
   margin: 5%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.header{
+.header {
   font-size: 25px;
   text-align: center;
 }
-.form{
-max-width: 50%;
-margin: auto;
+.form {
+  max-width: 50%;
+  margin: auto;
 }
-.form__section{
+.form__section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin-top: 10px;
 }
-.form__label{
+.form__label {
   min-width: 50px;
   max-width: 250px;
   min-height: 25px;
@@ -29,20 +28,20 @@ margin: auto;
   border: 1px dotted gray;
   background-color: rgb(230, 230, 251);
 }
-.form__select{
+.form__select {
   margin-top: 5px;
   min-height: 25px;
   width: 250px;
   border-radius: 5px;
   border: 1px dotted gray;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: space-around;
   max-width: 200px;
   margin-bottom: 5px;
 }
-.form__submit{
+.form__submit {
   width: 250px;
   height: 35px;
   border-radius: 5px;
@@ -50,6 +49,13 @@ margin: auto;
   border: none;
   background-color: rgb(170, 170, 251);
 }
-.form__checkbox{
+.form__checkbox {
   margin-top: 5px;
+}
+.error__input {
+  background-color: rgb(250, 208, 208);
+  /* border: 1px solid red; */
+}
+.error-message{
+  color: brown;
 }
