@@ -11,33 +11,34 @@
     <h1 class="header">Форма регистрации</h1>
     <form novalidate class="form">
       <div class="form__section">
-        <label for="name" class="form__label">Имя</label>
+        <label for="name" class="form__label">Имя*:</label>
         <input
           type="text"
           name="name"
           id="name"
-          placeholder=""
+          class="form__input"
+          placeholder="Ваше имя"
           minlength="2"
           maxlength="20"
           required
         />
       </div>
       <div class="form__section">
-        <label for="email" class="form__label">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="" required />
+        <label for="email" class="form__label">E-mail*:</label>
+        <input type="email" name="email" class="form__input" id="email" placeholder="Ваш E-mail" required />
       </div>
       <div class="form__section">
-        <label for="age" class="form__label">Возраст</label>
-        <input type="number" name="age" id="age" placeholder="" required />
+        <label for="age" class="form__label">Возраст*:</label>
+        <input type="number" class="form__input" name="age" id="age" placeholder="Ваш возраст" required />
       </div>
-      <p>Пол</p>
-      <div>
+      <p class="form__label">Пол*:</p>
+      <div class="flex">
         <label for="male" class="form__label">Мужской</label>
-        <input type="radio" id="male" name="male" value="sex" />
+        <input type="radio" id="male" name="sex" />
       </div>
-      <div>
-        <label for="female" class="form__label">Мужской</label>
-        <input type="radio" id="female" name="female" value="sex" />
+      <div class="flex">
+        <label for="female" class="form__label">Женский</label>
+        <input type="radio" id="female" name="sex" />
       </div>
       <label for="profession" class="form__label">Выберите профессию:</label>
       <select id="profession" name="profession" class="form__select">
@@ -50,19 +51,19 @@
         <option value="Опция 7">Другое</option>
       </select>
       <div class="form__section">
-        <label for="password1" class="form__label">Пароль:</label>
-        <input type="password" name="password1" id="password1" placeholder="" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/" required />
+        <label for="password1" class="form__label">Пароль*:</label>
+        <input type="password" name="password1" class="form__input" id="password1" placeholder="Введите пароль" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/" required />
       </div>
       <div class="form__section">
-        <label for="password2" class="form__label">Повторите пароль:</label>
-        <input type="password" name="password2" id="password2" placeholder="" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/" required />
+        <label for="password2" class="form__label">Подтвердите пароль*:</label>
+        <input type="password" name="password2" class="form__input" id="password2" placeholder="Введите пароль повторно" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/" required />
       </div>
-      <div class="form__section">
-        <label for="checkbox" class="form__label">Согласие</label>
+      <div class="form__checkbox">
+        <label for="checkbox" class="form__label">Согласие*:</label>
         <input type="checkbox" id="checkbox" required>
         <p>Подтверждаю свое согласие с обработкой персональных данных</p>
       </div>
-      <input type="submit" placeholder="Отправить">
+      <button type="submit" name="button" class="form__submit">Отправить</button>
     </form>
     <script src="index.js"></script>
   </body>
