@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1 class="header">Форма регистрации</h1>
-    <form novalidate class="form">
+    <form novalidate class="form" name="form">
       <div class="form__section">
         <label for="name" class="form__label">Имя*:</label>
         <input
@@ -57,8 +57,9 @@
         <label for="female" class="form__label">Женский</label>
         <input type="radio" id="female" name="sex" />
       </div>
-      <label for="profession" class="form__label">Выберите профессию:</label>
-      <select id="profession" name="profession" class="form__select">
+      <label for="profession" class="form__label">Профессия:</label>
+      <select id="profession" name="profession" class="form__select" required>
+        <option value="">Выберете профессию</option>
         <option value="Опция 1">Врач</option>
         <option value="Опция 2">Программист</option>
         <option value="Опция 3">Учитель</option>
