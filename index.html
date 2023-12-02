@@ -48,7 +48,7 @@
         />
         <span class="error-message" id="age-error"></span>
       </div>
-      <p class="form__label">Пол*:</p>
+      <p class="form__label">Пол:</p>
       <div class="flex">
         <label for="male" class="form__label">Мужской</label>
         <input type="radio" id="male" name="sex" />
@@ -68,6 +68,7 @@
         <option value="Опция 6">Продавец</option>
         <option value="Опция 7">Другое</option>
       </select>
+      <span class="error-message" id="profession-error"></span>
       <div class="form__section">
         <label for="password1" class="form__label">Пароль*:</label>
         <input
@@ -77,7 +78,7 @@
           id="password1"
           placeholder="Введите пароль"
           minlength="8"
-          pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/"
+          pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g"
           required
         />
         <span class="error-message" id="password1-error"></span>
@@ -91,7 +92,7 @@
           id="password2"
           placeholder="Введите пароль повторно"
           minlength="8"
-          pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d]{8,20}$/"
+          pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g"
           required
         />
         <span class="error-message" id="password2-error"></span>
@@ -99,12 +100,13 @@
       <div class="form__checkbox">
         <label for="checkbox" class="form__label">Согласие*:</label>
         <input type="checkbox" id="checkbox" required />
+        <span class="error-message" id="checkbox-error"></span>
         <p>Подтверждаю свое согласие с обработкой персональных данных</p>
-        <span id="checkbox-error"></span>
       </div>
       <button type="submit" name="button" class="form__submit">
         Отправить
       </button>
+      <span id="total-error"></span>
     </form>
     <script src="index.js"></script>
   </body>

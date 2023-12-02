@@ -16,14 +16,15 @@ body {
   margin-top: 10px;
 }
 .form__label {
-  min-width: 50px;
-  max-width: 250px;
+  /* min-width: 50px;
+  max-width: 250px; */
   min-height: 25px;
+  width: 100%;
   margin-right: 10px;
 }
 .form__input {
   min-height: 25px;
-  width: 250px;
+  width: 100%;
   border-radius: 5px;
   border: 1px dotted gray;
   background-color: rgb(230, 230, 251);
@@ -31,7 +32,7 @@ body {
 .form__select {
   margin-top: 5px;
   min-height: 25px;
-  width: 250px;
+  width: 100%;
   border-radius: 5px;
   border: 1px dotted gray;
 }
@@ -42,7 +43,7 @@ body {
   margin-bottom: 5px;
 }
 .form__submit {
-  width: 250px;
+  width: 100%;
   height: 35px;
   border-radius: 5px;
   font-size: 20px;
